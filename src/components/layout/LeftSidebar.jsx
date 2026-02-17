@@ -13,7 +13,7 @@ const LeftSidebar = () => {
     <aside
       className="
         /* ── Mobile (< 640px) ── */
-        w-[88vw] max-w-[88vw] mx-auto my-4
+        relative w-[88vw] max-w-[88vw] mx-auto my-4
         border border-gray-medium rounded-[30px] p-6 z-10
 
         /* ── Small mobile (≤ 375px) ── */
@@ -25,7 +25,7 @@ const LeftSidebar = () => {
         /* ── Large Tablet (768px – 1023px) ── */
         md:w-[45vw] md:max-w-[45vw] md:p-8 md:mx-auto
 
-        /* ── Desktop (≥ 1024px) ── fixed left sidebar ── */
+        /* ── Desktop (≥ 1024px) ── left sidebar ── */
         lg:fixed lg:left-5 lg:top-1/2 lg:-translate-y-1/2
         lg:w-[25vw] lg:max-w-[70vw] lg:mx-0 lg:p-6 lg:my-0
       "
