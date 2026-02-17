@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #28e98c;
+  --color-dark: #000000;
+  --color-gray-light: #999999;
+  --color-gray-medium: #565656;
+  --color-gray-dark: #333333;
+  
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-josefin: 'Josefin Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  color: var(--color-gray-light);
+  background-color: var(--color-dark);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+@layer utilities {
+  .animate-rotate {
+    animation: rotate 6s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-bounce-ball {
+    animation: bounce 0.5s infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #565656;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #28e98c;
+}
