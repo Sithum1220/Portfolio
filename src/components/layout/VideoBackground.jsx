@@ -6,9 +6,9 @@ const VideoBackground = () => {
       autoPlay
       loop
       muted
-      className="fixed left-0 top-0 w-full h-full object-cover -z-10 opacity-30"
+      className="object-cover fixed top-0 left-0 w-full h-full opacity-30 -z-10"
     >
-      <source src="/assets/videos/backgroud.mp4" type="video/mp4" />
+      <source src="public/assets/images/backgroud.mp4" type="video/mp4" />
     </video>
   );
 };
