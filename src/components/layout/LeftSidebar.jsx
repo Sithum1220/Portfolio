@@ -12,7 +12,7 @@ const LeftSidebar = () => {
     <aside
       className="
         /* ── Mobile (< 640px) ── */
-        w-[88vw] max-w-[88vw] mx-auto my-4
+        relative w-[88vw] max-w-[88vw] mx-auto my-4
         border border-gray-medium rounded-[30px] p-6 z-10
 
         /* ── Small mobile (≤ 375px) ── */
@@ -24,25 +24,29 @@ const LeftSidebar = () => {
         /* ── Large Tablet (768px – 1023px) ── */
         md:w-[45vw] md:max-w-[45vw] md:p-8 md:mx-auto
 
-        /* ── Desktop (≥ 1024px) ── fixed left sidebar ── */
+        /* ── Desktop (≥ 1024px) ── left sidebar ── */
         lg:fixed lg:left-5 lg:top-1/2 lg:-translate-y-1/2
         lg:w-[25vw] lg:max-w-[70vw] lg:mx-0 lg:p-6 lg:my-0
       "
     >
       {/* Portfolio Branding */}
       <div className="mb-4 lg:mb-5">
-        <h2 className="
+        <h2
+          className="
           text-white font-josefin font-bold inline-block m-0
           text-[26px] sm:text-[30px] md:text-[32px]
           lg:text-[26px] xl:text-[30px] 2xl:text-[34px]
-        ">
+        "
+        >
           Port
         </h2>
-        <h1 className="
+        <h1
+          className="
           text-primary font-josefin font-bold inline-block m-0
           text-[32px] sm:text-[36px] md:text-[38px]
           lg:text-[32px] xl:text-[36px] 2xl:text-[40px]
-        ">
+        "
+        >
           folio
         </h1>
       </div>
@@ -73,10 +77,26 @@ const LeftSidebar = () => {
       <nav className="mb-5 text-center sm:mb-7 lg:mb-4 xl:mb-5 2xl:mb-6">
         <ul className="flex flex-row gap-2 justify-center">
           {[
-            { href: "https://twitter.com/SithumImesh", Icon: FaTwitter, label: "Twitter" },
-            { href: "www.linkedin.com/in/sithum-imesh-0331b9295", Icon: FaLinkedin, label: "LinkedIn" },
-            { href: "https://www.facebook.com/share/1bJEzYVw9R/?mibextid=wwXIfr", Icon: FaFacebook, label: "Facebook" },
-            { href: "https://github.com/Sithum1220", Icon: FaGithub, label: "GitHub" },
+            {
+              href: "https://twitter.com/SithumImesh",
+              Icon: FaTwitter,
+              label: "Twitter",
+            },
+            {
+              href: "www.linkedin.com/in/sithum-imesh-0331b9295",
+              Icon: FaLinkedin,
+              label: "LinkedIn",
+            },
+            {
+              href: "https://www.facebook.com/share/1bJEzYVw9R/?mibextid=wwXIfr",
+              Icon: FaFacebook,
+              label: "Facebook",
+            },
+            {
+              href: "https://github.com/Sithum1220",
+              Icon: FaGithub,
+              label: "GitHub",
+            },
           ].map(({ href, Icon, label }) => (
             <li key={label} className="list-none">
               <a
