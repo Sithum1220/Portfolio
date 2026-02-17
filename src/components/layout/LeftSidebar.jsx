@@ -12,7 +12,7 @@ const LeftSidebar = () => {
     <aside
       className="
         /* ── Mobile (< 640px) ── */
-        relative w-[88vw] max-w-[88vw] mx-auto my-4
+        w-[88vw] max-w-[88vw] mx-auto my-4
         border border-gray-medium rounded-[30px] p-6 z-10
 
         /* ── Small mobile (≤ 375px) ── */

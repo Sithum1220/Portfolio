@@ -98,7 +98,7 @@ const Certificate = () => {
               transition={{ duration: 0.3 }}
               className="relative w-full max-w-5xl max-h-full"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-black/80 via-black/40 to-transparent rounded-bl-[100px] pointer-events-none z-10"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-black/80 via-black/40 to-transparent rounded-bl-[100px] pointer-events-none z-10"></div>
               <button
                 onClick={(e) => {
                   e.stopPropagation();
