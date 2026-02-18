@@ -8,7 +8,7 @@ const VideoBackground = () => {
       muted
       className="object-cover fixed top-0 left-0 w-full h-full opacity-30 -z-10"
     >
-      <source src="public/assets/images/backgroud.mp4" type="video/mp4" />
+      <source src="/backgroud.mp4" type="video/mp4" />
     </video>
   );
 };
