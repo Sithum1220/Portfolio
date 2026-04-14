@@ -61,8 +61,9 @@ const Services = () => {
   px-5
   sm:px-8
   md:px-12
-  lg:pl-[320px] lg:pr-[100px]
-  xl:pl-[450px] xl:pr-[100px]
+  lg:pl-10 lg:pr-28
+  xl:pl-14 xl:pr-28
+  2xl:pl-20 2xl:pr-32
       ">
         {/* Title Badge */}
         <div className="inline-flex items-center justify-center h-10 px-5 rounded-[32px] border border-gray-medium bg-dark min-w-[140px]">

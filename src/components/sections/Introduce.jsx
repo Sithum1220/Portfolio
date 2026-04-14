@@ -14,8 +14,9 @@ const Introduce = () => {
   px-5
   sm:px-8
   md:px-12
-  lg:pl-[320px] lg:pr-[100px]
-  xl:pl-[450px] xl:pr-[100px]
+  lg:pl-10 lg:pr-28
+  xl:pl-14 xl:pr-28
+  2xl:pl-20 2xl:pr-32
 "
       >
         {/* ── Title Badge ── */}

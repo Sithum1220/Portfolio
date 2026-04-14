@@ -25,7 +25,7 @@ function App() {
         <CircularNavigation />
       </div>
 
-      <main className="relative">
+      <main className="relative lg:ml-[calc(25vw+40px)]">
         <Introduce />
         <About />
         <Education />
