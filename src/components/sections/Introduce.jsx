@@ -89,8 +89,7 @@ const Introduce = () => {
 
           {/* Description */}
           <h4 className="mt-6 text-sm font-normal leading-relaxed text-gray-light font-josefin sm:mt-8 lg:mt-10 sm:text-base md:text-lg lg:text-xl xl:text-xl">
-            Specialized in Flutter mobile development and Spring Boot RESTful
-            APIs, with expertise in MQTT, WebSockets, and JWT-based security
+            Specialized in Flutter, Spring Boot, and architecting real-time Building Management Systems for a UK-based firm. Deep expertise in MQTT, WebSockets, and secure API development.
           </h4>
         </motion.section>
 

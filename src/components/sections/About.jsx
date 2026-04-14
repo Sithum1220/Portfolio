@@ -34,7 +34,7 @@ const About = () => {
             text-[30px] sm:text-[38px] md:text-[44px] lg:text-[49px] xl:text-[54px]
           "
           >
-            Interesting
+            About
           </h2>
           <h1
             className="
@@ -55,12 +55,11 @@ const About = () => {
           className="w-full"
         >
           <p className="m-0 text-base font-normal leading-8 text-gray-light font-josefin sm:text-lg lg:text-xl">
-            Junior Software Engineer with 1.5+ years of experience in
-            architecting real-time Building Management Systems (BMS) for a
-            UK-based firm. Specialized in Flutter mobile development and Spring
-            Boot RESTful APIs, with deep expertise in MQTT, WebSockets, and
-            JWT-based security. Proven track record in optimizing application
-            performance by resolving production-level issues and managing
+            Software Engineer with 1.5+ years of experience in architecting real-time Building Management Systems (BMS)
+            for a UK-based firm. Specialized in Flutter mobile development and Spring Boot RESTful APIs, with deep
+            expertise in MQTT, WebSockets, and JWT-based security. Notably, engineered and deployed a production-level
+            Desktop POS system for retail, featuring complex batch pricing logic and offline-first architecture using
+            React, Electron, and SQLite. Proven track record in optimizing application performance and managing
             end-to-end iOS deployments via App Store and TestFlight.
           </p>
         </motion.div>
