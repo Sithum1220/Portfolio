@@ -1,35 +1,43 @@
 import React from "react";
-import { FaTasks, FaGithub } from "react-icons/fa";
+import { FaTasks, FaGithub, FaStar } from "react-icons/fa";
 
 const Project = () => {
+  const featuredProject = {
+    title: "Advanced Retail POS & Inventory System",
+    description:
+      "A production-ready Desktop POS engineered for high-traffic retail. Features a Quick-Switch Billing popup for multi-tasking, automated Google Drive Cloud Backups, and complex Batch Pricing logic. Includes comprehensive modules for expense tracking, profit/loss analysis, and silent thermal printing.",
+    technologies: ["React", "Electron", "SQLite", "Node.js", "Google Drive API"],
+    githubLink: "https://github.com/gcodelabs-com/mini-mart-pos-v2.git",
+  };
+
   const projects = [
     {
       title: "Shoe Shop Management System",
       description:
         "Full-stack Spring Boot application featuring JWT Authentication, managing inventory, suppliers, orders, and returns with automated stock logic.",
       technologies: ["Spring Boot", "JWT", "MySQL", "React"],
-      githubLink: "#",
+      githubLink: "https://github.com/Sithum1220/Shoe-Shop-Management-System.git",
     },
     {
       title: "Mobile Paradise - Mobile Shop Management",
       description:
         "Comprehensive mobile shop management system with inventory tracking, sales management, and customer relationship features.",
       technologies: ["Java", "MySQL", "Hibernate"],
-      githubLink: "#",
+      githubLink: "https://github.com/Sithum1220/Mobile-Shop-Management-System.git",
     },
     {
       title: "Fishery Harbor Management System",
       description:
         "Management system for Galle Fishery Harbor to track vessels, catches, and harbor operations efficiently.",
       technologies: ["Java", "MySQL", "JavaFX"],
-      githubLink: "#",
+      githubLink: "https://github.com/Sithum1220/Fishery-Harbor.git",
     },
     {
       title: "Hostel Management System",
       description:
         "Complete hostel management solution for tracking rooms, students, payments, and reservations.",
       technologies: ["Java", "MySQL", "Hibernate"],
-      githubLink: "#",
+      githubLink: "https://github.com/Sithum1220/Hostel-Management-System.git",
     },
   ];
 
@@ -65,6 +73,43 @@ const Project = () => {
           ">
             Projects
           </h1>
+        </div>
+
+        {/* ── Featured Project Card ── */}
+        <div className="relative mb-6 sm:mb-8 rounded-[20px] border border-primary bg-dark p-5 sm:p-7 transition-all duration-500 hover:scale-[1.02] cursor-pointer"
+          style={{ boxShadow: "0 0 24px 2px rgba(40,233,140,0.15)" }}
+        >
+          {/* Featured Badge */}
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-4 rounded-full bg-primary/10 border border-primary text-primary text-xs font-medium">
+            <FaStar className="text-[10px]" />
+            Featured Project
+          </div>
+
+          <h3 className="mb-3 text-xl font-light text-white sm:text-2xl">
+            {featuredProject.title}
+          </h3>
+          <p className="mb-5 text-sm leading-relaxed sm:text-base text-gray-light">
+            {featuredProject.description}
+          </p>
+          <div className="flex flex-wrap gap-2 mb-5">
+            {featuredProject.technologies.map((tech, idx) => (
+              <span
+                key={idx}
+                className="px-3 py-1 text-xs rounded-full border bg-primary/10 text-primary border-primary/40"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          <a
+            href={featuredProject.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex gap-2 items-center transition-colors duration-300 text-primary hover:text-white"
+          >
+            <FaGithub className="text-lg sm:text-xl" />
+            <span className="text-sm">View on GitHub</span>
+          </a>
         </div>
 
         {/* Projects Grid */}
